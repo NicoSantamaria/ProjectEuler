@@ -1,8 +1,11 @@
 # ProjectEuler
 
 https://projecteuler.net
+This repository is dedicated to my solutions to the Project Euler challenges. 
 
-This repository is dedicated to my solutions to the Project Euler challenges. All solutions in the "Solutions" folder have a runtime of less than two seconds.
-Solutions in the "Unfinished" have a runtime of less than one minute and need to be optimized further.
+All files in the "SolutionsPython" folder are written in Python and have been solved with a runtime of less than two seconds.
 
-All solutions are written in Python.
+All files in the "SolutionsR" folder are written in R and are solved.
+
+Files in the "Unfinished" folder are written in Python or R and are either unsolved or have a runtime greater than 
+two seconds, and need to be optimized further.
