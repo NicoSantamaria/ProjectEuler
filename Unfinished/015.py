@@ -1,14 +1,14 @@
-squares = 2
+import timeit
+import itertools
+start = timeit.default_timer()
 
-def buildMat(dim):
-    pos_mat = [None] * (dim+1)
-    for i in range(0, dim+1):
-        pos_mat[i] = [None] * (dim+1)
-    return(pos_mat)
+paths = set(itertools.permutations(["down", "right"] * 5))
+sum = 0
+for x in paths:
+    if x in paths:
+        sum += 1
 
-mat = buildMat(squares)
+print(sum)
 
-for x in range(0,squares + 1):
-    for y in range(0,squares+1):
-        mat[x][y] = [x,y]
-print(mat)
+stop = timeit.default_timer()
+print(stop-start)
