@@ -28,3 +28,5 @@ sum_ = 0
 for x in range(0,1001):
     sum_ += len(spellNum(x))
 print(sum_)
+# 21124
+# Runtime: 0.004s
