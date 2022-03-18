@@ -59,9 +59,8 @@ sum_amicables(10000)
 
 """
 NOTES:
-Optimizations to be made:
 I'm double checking amicable numbers. When this algorithm finds
-220 and its correspondin amicable number 284, it adds 220 and continues
+220 and its corresponding amicable number, 284, it adds 220 and continues
 iterating upward until it also adds 284. The algorithm could be optimized
 by adding 220 and 284 in one go, since the is_amicable function is by far
 the most expensive part of the program.
