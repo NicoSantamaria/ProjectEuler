@@ -7,17 +7,17 @@ def isPrime(num):
     return True
 
 
-def isFactor(fac):
-    if not number % fac:
+def isFactor(fac, n):
+    if not n % fac:
         return True
 
     return False
 
 
 def largest_prime_factor(n):
-    i = int(number**0.5)
+    i = int(n**0.5)
 
-    while not (isPrime(i) and isFactor(i)):
+    while not (isPrime(i, n) and isFactor(i, n)):
         i -= 1
 
     return i

@@ -31,6 +31,7 @@ def is_amicable(n):
     div_sum = sum_proper_divisors(n)
     div_sum_pair = sum_proper_divisors(div_sum)
 
+    # Return True if n is has an amicable pair which is not itself.
     return (n == div_sum_pair) & (n != div_sum)
 
         
@@ -56,9 +57,6 @@ sum_amicables(10000)
 
 """
 NOTES:
-I'm double checking amicable numbers. When this algorithm finds
-220 and its corresponding amicable number, 284, it adds 220 and continues
-iterating upward until it also adds 284. The algorithm could be optimized
-by adding 220 and 284 in one go, since the is_amicable function is by far
-the most expensive part of the program.
+Not quite at my 2s threshold. Maybe some time to be saved in the
+sum_proper_divisors function?
 """

@@ -28,8 +28,10 @@ def spellNum(number, spell_num, spell_num_tens):
         
         # For three digit numbers
         if len(num_string) == 3:
+
             if not number % 100:
                 return spell_num[number / 100] + "hundred"
+                
             else:
                 return spell_num[int(num_string[0])] + "hundredand" + spellNum(int(num_string[1::1]), spell_num, spell_num_tens)
     
@@ -57,5 +59,5 @@ sum_spelling(
 NOTES:
 I could do this more elegantly and probably a bit quicker if I were
 to rewrite the code to pull from a single dict (rather than two), but
-this works well enough for now.
+this works well enough.
 """
